@@ -1,0 +1,200 @@
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #000;
+    padding-bottom: 80px; /* Jarak untuk bottom nav */
+}
+
+/* Header */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 100;
+}
+
+.logo img {
+    height: 30px;
+}
+
+.header-icons i {
+    font-size: 22px;
+}
+
+/* Category Navigation */
+.category-nav {
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #000;
+}
+
+.category-nav ul {
+    display: flex;
+    list-style: none;
+    overflow-x: auto;
+    padding: 10px 0;
+}
+
+.category-nav li {
+    flex: 1;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: bold;
+    min-width: 100px;
+}
+
+.category-nav li.active {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+/* Sponsored Section */
+.sponsored-section {
+    padding: 20px;
+}
+
+.section-title {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.product-card {
+    background: #f5f5f5;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.product-img img {
+    width: 100%;
+    display: block;
+}
+
+.product-info {
+    padding: 10px;
+    background: #ccc; /* Sesuai dengan warna abu-abu di screenshot */
+}
+
+.product-info h3 {
+    font-size: 11px;
+    font-weight: bold;
+    height: 35px;
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+
+.product-info .price {
+    font-weight: bold;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+.stars i {
+    font-size: 12px;
+    color: #e2e600; /* Warna kuning bintang */
+}
+
+.stars i.fa-regular {
+    color: #000; /* Bintang kosong hitam */
+}
+
+/* Product Detail Section */
+.product-detail {
+    padding: 20px;
+    border-top: 2px solid #000;
+}
+
+.detail-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.description-box {
+    font-size: 14px;
+    line-height: 1.4;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.detail-options {
+    border: 2px solid #000;
+    margin-bottom: 20px;
+}
+
+.option-row {
+    padding: 12px;
+    border-bottom: 1px solid #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.option-row:last-child {
+    border-bottom: none;
+}
+
+/* Button Add to Bag */
+.add-to-bag {
+    width: 100%;
+    background: #111;
+    color: white;
+    padding: 18px;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+/* Bottom Navigation */
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background: #f0f0f0;
+    padding: 10px 0;
+    border-top: 1px solid #ddd;
+}
+
+.nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 10px;
+    color: #000;
+}
+
+.nav-item i {
+    font-size: 20px;
+    margin-bottom: 2px;
+}
+
+.nav-item.active {
+    font-weight: bold;
+}
